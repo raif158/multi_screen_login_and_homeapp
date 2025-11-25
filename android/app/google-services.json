@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "684016230672",
+    "project_id": "intern-631c5",
+    "storage_bucket": "intern-631c5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684016230672:android:2d1c7af235ac0975e80595",
+        "android_client_info": {
+          "package_name": "com.example.multi_screen_login_and_homeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDugsTUKkcyQgqYy9WXDwWv4faZiFRNthI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
