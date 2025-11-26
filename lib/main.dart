@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:multi_screen_login_and_homeapp/feature/auth/presentation/screen/splash_screen.dart';
+import 'package:multi_screen_login_and_homeapp/home/presentation/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
