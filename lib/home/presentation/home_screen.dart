@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:multi_screen_login_and_homeapp/home/model/cart_model.dart';
 import 'package:multi_screen_login_and_homeapp/home/presentation/cart_screen.dart';
 import 'package:multi_screen_login_and_homeapp/home/presentation/wishlist_screen.dart';
+import 'package:multi_screen_login_and_homeapp/home/repository/cart_repo.dart';
 import '../widget/custom_category_nav.dart';
 import '../widget/custom_navBar.dart';
 import '../widget/custom_product_card.dart';
@@ -261,6 +263,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         );
                       },
                       onAddToCart: () {
+                        CartRepository().addProductToCart(
+                          CartModel(
+                            id: product.id,
+                            title: product.title,
+                            image: product.imagePath,
+                            price: product.price,
+                            qty: 1,
+                          ),
+                        );
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text('Added ${product.title} to cart!'),
